@@ -1,0 +1,99 @@
+{
+  "theme": "light",
+  "typography": {
+    "headings": "Nunito",
+    "body": "DM Sans",
+    "instructions": "Use Nunito with tracking-tight and font-bold to font-black for a friendly, energetic voice. Use DM Sans for readable, clean data in dashboards. AVOID standard corporate fonts like Inter or Roboto to prevent the 'AI-slop' aesthetic. Ensure all typography feels human, slightly rounded, and highly legible."
+  },
+  "colors": {
+    "primary": "#E85D04",
+    "primary_hover": "#DC2F02",
+    "secondary": "#F4A261",
+    "background": "#FFFDF7",
+    "surface": "#FFFFFF",
+    "text_primary": "#2D231F",
+    "text_secondary": "#5C4F4A",
+    "accent_green": "#2A9D8F",
+    "accent_red": "#D62828",
+    "accent_yellow": "#E9C46A",
+    "border_light": "#FDEEDC",
+    "instructions": "Warm, food-themed palette. Avoid generic blues or clinical grays completely. Use #FFFDF7 as the app background to give it a creamy, organic feel. Use vibrant accents for badges, interactive states, and charts. Text should be a warm charcoal (#2D231F), never pure black."
+  },
+  "visual_enhancers": {
+    "borders_and_shadows": "Soft ambient shadows (shadow-lg, shadow-xl) with a hint of warmth (e.g., rgba(232, 93, 4, 0.08)). No sharp edges—use rounded-2xl or rounded-3xl for cards. Use rounded-full for buttons and stat pills.",
+    "textures": "Include a subtle SVG noise/grain overlay on large background areas to make the app feel tactile, hand-crafted, and 'human-made'.",
+    "icons": "Use lucide-react. Crucial: Set strokeWidth={2.5} or {3} on all icons to give them a chunkier, friendlier, and playful aesthetic (e.g., <Utensils strokeWidth={2.5} />). Do not use emojis."
+  },
+  "layouts": {
+    "spacing": "Generous spacing. Use p-6 to p-8 inside cards. gap-6 to gap-8 for grids. Do not cram elements together.",
+    "grids": "Use Bento-style asymmetrical layouts for main landing pages (Mess vs. Cafeteria cards). Dashboards should use dense but rounded widget layouts with clear visual hierarchy.",
+    "alignment": "Left-align dense content and forms. Center-align hero text, large cards, and empty states."
+  },
+  "components": {
+    "buttons": "Pill-shaped (rounded-full), bold text, vibrant primary or secondary colors. Hover effect: slight lift (-translate-y-1) and shadow increase. Active effect: scale-95. Floating Action Button (FAB) for 'Report Food' should be large and sticky at bottom-right.",
+    "cards": "White background (bg-white), rounded-3xl, warm soft shadow, border-none or 1px very subtle warm border (border-[#FDEEDC]).",
+    "badges": "Generous padding (px-4 py-1.5), rounded-full, bright background with high-contrast text. Use heavily for stats, shop names, and item breakdowns.",
+    "charts": "Recharts. Use custom tooltips with rounded-2xl styling. Apply the warm color palette (oranges, yellows, greens) to the bars and lines. Hide grid lines or make them very faint (stroke-[#FDEEDC]). Use rounded tops for bar charts if possible.",
+    "forms": "Inputs with rounded-2xl, bg-white, subtle warm border. Thick border on focus (focus:ring-2 focus:ring-[#E85D04] focus:outline-none). Add dynamic fields for 'Add Another Item'."
+  },
+  "motion": {
+    "transitions": "Use specific transitions: transition-transform duration-200 ease-out for hover effects, transition-colors duration-200 for state changes.",
+    "entrance": "Staggered fade-up for cafeteria shop cards and dashboard widgets (using framer-motion or CSS animations)."
+  },
+  "accessibility": {
+    "contrast": "Ensure text over orange/yellow backgrounds meets APCA guidelines. Use dark brown/charcoal text over warm colors.",
+    "testing": "All interactive elements MUST include a data-testid attribute (e.g., data-testid=\"report-food-fab\", data-testid=\"login-submit-btn\")."
+  },
+  "media": {
+    "image_urls": {
+      "mess_card": {
+        "url": "https://images.unsplash.com/photo-1775748265132-a5575dea2994?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxjb2xsZWdlJTIwZGluaW5nJTIwaGFsbCUyMGZvb2R8ZW58MHx8fHwxNzg3NjAyMDgwfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Grand college dining hall, used for the main Mess card on the landing page.",
+        "category": "landing_page_hero"
+      },
+      "cafeteria_card": {
+        "url": "https://images.unsplash.com/photo-1709380146558-bbc94b0f05f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHxjYWZldGVyaWElMjBmb29kJTIwY291bnRlcnxlbnwwfHx8fDE3ODc2MDIwODB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Cafeteria food counter, used for the main Cafeteria shops card.",
+        "category": "landing_page_hero"
+      },
+      "shop_placeholder": {
+        "url": "https://images.unsplash.com/photo-1756620964555-9e304c4092f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxmcmVzaCUyMGp1aWNlJTIwYW5kJTIwc25hY2tzfGVufDB8fHx8MTc4NzYwMjA4MHww&ixlib=rb-4.1.0&q=85",
+        "description": "Fresh juice and snacks, use as a placeholder for cafeteria shop covers (Amul Shop, Nescafe, etc.).",
+        "category": "cafeteria_shops"
+      },
+      "waste_aesthetic": {
+        "url": "https://images.unsplash.com/photo-1614272527834-e95f090a34c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxmb29kJTIwd2FzdGUlMjBjb21wb3N0fGVufDB8fHx8MTc4NzYwMjA4MHww&ixlib=rb-4.1.0&q=85",
+        "description": "Aesthetic organic orange peels, use for empty states, login page backgrounds, or the student feedback flow.",
+        "category": "backgrounds"
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the 'LeftoverLab' warm color palette. Do NOT use default Tailwind grays, blues, or indigos (e.g., slate, blue, gray). Use the defined warm charcoal (#2D231F) for all text to ensure it looks human-made and appetizing.",
+    "Implement a highly visible Floating Action Button (FAB) on the main user landing page for 'Report / Rate Food'.",
+    "Build the dashboard metrics and charts using Recharts. Ensure the charts use the primary/secondary warm colors (orange, yellow, green, red) and remove rigid, dark grid lines.",
+    "Implement the anonymous student feedback flow with a chunky, interactive 1-5 star rating component. Use Lucide icons (Star) with fill and strokeWidth={2.5}.",
+    "Ensure all cards have a large border-radius (rounded-2xl or rounded-3xl) to maintain the playful, non-corporate vibe.",
+    "The data entry form for waste tracking must dynamically allow adding multiple items (e.g., 'Rice - 5kg') before submitting (use a repeating field array or local state array).",
+    "Implement mock data logic for the Mess dashboard to toggle between Breakfast, Lunch, Dinner, and 'Sunday Brunch'.",
+    "Create 6 distinct shop cards for the Cafeteria landing (Amul Shop, Campus Zaiqa, Nescafe, Hungrys, Friend's Juice Corner, Snacks Point) using mock stats.",
+    "Avoid Shadcn defaults where they look too rigid or 'Vercel-like'. Customize the border-radius and strip away the subtle gray borders in favor of soft warm shadows and warm border colors."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) where appropriate, ensuring warm background tints.",
+    "You MUST NOT apply universal transition (e.g., `transition: all`). This results in breaking transforms. Always add transitions for specific interactive elements excluding transforms.",
+    "You MUST NOT center align the app container, i.e., do not add `.App { text-align: center; }` in the CSS file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped with interaction animations and colors relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc. for icons. Use lucide-react.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use `sonner` for toasts.",
+    "All interactive and key informational elements MUST include a `data-testid` attribute to facilitate robust automated testing."
+  ]
+}
