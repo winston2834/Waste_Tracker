@@ -12,13 +12,13 @@
  • Hear it — students rate meals anonymously, giving staff direct feedback on what's working and what isn't. 
 
 
- **2. Who Uses It** 
+ # **2. Who Uses It** 
  
  LeftoverLab has four types of users, each with a different view of the app: 
 
  ![alt text](<Screenshot 2026-08-25 100600.png>)
  
-**3. Getting Started** 
+# **3. Getting Started** 
 
 **3.1  For Students / Guests :**
 No account is needed. From the homepage, students can: 
@@ -39,3 +39,28 @@ Staff accounts are created and assigned by the admin — there is no public sign
 • You'll land on your role's dashboard automatically after logging in. 
 
 Staff credentials are managed centrally. If you don't have login details, contact your campus admin — they can also change or reset passwords. 
+
+# **4. Mess Dashboard** 
+
+The Mess page tracks food waste in the campus dining hall across breakfast, lunch, and dinner (brunch + dinner only on Sundays). 
+
+**4.1  Logging waste (Mess Incharge only)** 
+
+Mess Incharge accounts see an entry form at the top of the page to log wasted items — item name and weight in 
+kilograms — for a specific meal. 
+
+**4.2  What everyone can see** 
+
+• Wasted today, last 7 days total, and the average student rating for the mess. 
+
+• "Waste totals" chart — switch between daily and weekly views, and filter by meal (breakfast / lunch / dinner or all). 
+
+• 30-day trend line showing whether waste is rising or falling over time. 
+
+• Item-wise breakdown for any date — see exactly which dishes were wasted and how much. 
+
+# **5. Cafeteria & Shop Dashboards**
+
+ The cafeteria covers six independent shops. Each shop has its own dashboard, visible to that shop's owner and to the admin.
+
+![alt text](<Screenshot 2026-08-25 103948.png>)
