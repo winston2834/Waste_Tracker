@@ -127,9 +127,15 @@ Forecasting: a lightweight linear regression model implemented directly in the a
 
 # 9. Quick Reference
 Item   -  	Description
+
 Homepage	- Snapshot of today's totals across mess and cafeteria.
+
 "Mess" - 	Dining hall dashboard.
+
 "Cafeteria" - 	Pick a shop to view its dashboard.
+
 "Report / Rate Food"	- Anonymous feedback, no login needed.
+
 Staff login links - 	In the site footer / navigation, per role.
+
 Admin dashboard	- Campus-wide totals, forecast, and all reports (admin login only).
