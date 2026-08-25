@@ -64,3 +64,29 @@ kilograms — for a specific meal.
  The cafeteria covers six independent shops. Each shop has its own dashboard, visible to that shop's owner and to the admin.
 
 ![alt text](<Screenshot 2026-08-25 103948.png>)
+
+Each shop dashboard shows the same core structure as the mess page, scoped to that shop: 
+
+• An entry form for the shop owner to log wasted items. 
+
+• Daily and weekly waste totals with trend charts. 
+
+• Item-wise breakdown for any given date. 
+
+• Anonymous student ratings and comments left about that specific shop.
+
+# **6. Reporting / Rating Food**
+
+Anyone — students or guests — can leave feedback via the "Report / Rate Food" page without logging in. To submit a rating:
+
+ • Choose what you're rating: the mess, or a specific cafeteria shop. 
+ 
+ • If rating the mess, pick which meal (breakfast, lunch, or dinner). 
+ 
+ • Give a 1–5 star rating for food quality. 
+ 
+ • Optionally add a short comment (up to 280 characters). 
+ 
+ • Submit — the rating goes straight to that outlet's staff and the admin. It is completely anonymous. 
+
+ 
