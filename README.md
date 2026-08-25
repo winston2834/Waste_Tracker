@@ -1,4 +1,4 @@
-**1. What is LeftoverLab?**
+#**1. What is LeftoverLab?**
 
 
  LeftoverLab is a campus food-waste tracking platform. It measures how much food gets thrown away in the college mess (dining hall) and at every cafeteria shop, turns that into simple dashboards, and lets students anonymously rate food quality — so mess staff, shop owners, and campus admins can see where waste is happening 
