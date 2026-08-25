@@ -89,4 +89,47 @@ Anyone — students or guests — can leave feedback via the "Report / Rate Food
  
  • Submit — the rating goes straight to that outlet's staff and the admin. It is completely anonymous. 
 
- 
+
+# 7. Admin Dashboard
+
+The Admin view gives campus-wide visibility across every outlet, plus tools no other role has access to.
+
+**7.1 Campus-wide totals & trends**
+
+Total waste today across the mess and all six shops combined.
+A 7-day breakdown per outlet, to compare who is wasting the most.
+A 14-day campus-wide trend chart.
+
+**7.2 AI-Powered Waste Forecast**
+
+The admin dashboard includes a 7-day waste forecast, built using a linear regression model trained on the last 21 days of campus-wide totals. It projects where waste is headed over the coming week, shown as a dashed line alongside actual data, with a shaded confidence band reflecting the model's margin of error.
+
+A percentage badge (e.g. "+8% next week") shows the projected direction and size of the change.
+A "Top items to target" panel ranks the specific dishes contributing most to recent waste, so staff know where to focus first.
+
+How it works: the model fits a straight trend line through recent daily totals (least-squares regression) and extends that line forward. It's intentionally simple and explainable — well suited to short-term (5–10 day) forecasting of food-waste patterns, which tend to move in fairly steady trends week to week.
+
+**7.3 Drilling into an outlet**
+
+Admins can select any individual outlet — the mess or any shop — to view its detailed dashboard, exactly as that outlet's own staff would see it.
+
+**7.4 All student reports**
+
+Every anonymous rating and comment submitted campus-wide is visible to the admin, filterable by outlet.
+
+# 8. Behind the Scenes
+
+For anyone curious about how LeftoverLab is built:
+
+Frontend: React, styled with Tailwind CSS and shadcn/ui components, with Recharts powering all charts.
+Backend: FastAPI (Python), designed to connect to a MongoDB database.
+Forecasting: a lightweight linear regression model implemented directly in the app, with no external ML service required.
+
+# 9. Quick Reference
+Item   -  	Description
+Homepage	- Snapshot of today's totals across mess and cafeteria.
+"Mess" - 	Dining hall dashboard.
+"Cafeteria" - 	Pick a shop to view its dashboard.
+"Report / Rate Food"	- Anonymous feedback, no login needed.
+Staff login links - 	In the site footer / navigation, per role.
+Admin dashboard	- Campus-wide totals, forecast, and all reports (admin login only).
